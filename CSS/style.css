@@ -1,0 +1,537 @@
+@font-face {
+    font-family: Elephant;
+    src: url('../Fonts/Elephant/Elephant.ttf');
+}
+
+@font-face {
+    font-family: LibreCaslonText__Bold;
+    src: url('../Fonts/Libre_Caslon_Text/LibreCaslonText-Bold.ttf');
+}
+
+@font-face {
+    font-family: LibreCaslonText__Regular;
+    src: url('../Fonts/Libre_Caslon_Text/LibreCaslonText-Regular.ttf');
+}
+
+@font-face {
+    font-family: Livvic__Bold;
+    src: url('../Fonts/Livvic/Livvic-Bold.ttf');
+}
+
+@font-face {
+    font-family: Livvic__Medium;
+    src: url('../Fonts/Livvic/Livvic-Medium.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+.mmo__img img {
+    width: 100%;
+}
+
+.bg__mmo {
+    height: 100vh;
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.mmo__img {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.mmo__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.row__mmo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column__mmo {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.bl__mmo__left {
+    /* border: 1px solid black; */
+    height: auto;
+}
+
+.gr__mmo__right {
+    height: auto;
+    /* border: 1px solid black; */
+}
+
+.head__text {
+    text-align: center;
+    margin: 30px 0px 0px 100px;
+}
+
+.head__text h1 {
+    color: #FFFFFF;
+    font-family: 'LibreCaslonText__Bold';
+    font-size: calc(26pt + 0.15vw);
+    line-height: 1.2195;
+    letter-spacing: 0.03em;
+}
+
+.head__text span {
+    font-family: 'LibreCaslonText__Regular';
+}
+
+@media screen and (max-width: 1080px) {
+    .head__text h1 {
+        font-size: calc(10pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .head__text {
+        text-align: center;
+        margin: 30px 0px 0px 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .head__text h1 {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .head__text {
+        text-align: center;
+        margin: 10px 0px 0px 10px;
+    }
+}
+
+.st__text {
+    text-align: center;
+    margin: 50px 0px 0px 0px;
+}
+
+.st__text span {
+    border: 2px solid #FFF1E0;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 15px 40px;
+    border-radius: 12px;
+}
+
+.st__text p {
+    font-size: calc(13pt + 0.15vw);
+    font-family: 'LibreCaslonText__Bold';
+    color: #FFFFFF;
+    line-height: 1.2195;
+    letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1080px) {
+    .st__text p {
+        font-size: calc(8pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .st__text {
+        margin: 30px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .st__text p {
+        font-size: calc(6pt + 0.15vw);
+    }
+    .st__text span {
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .st__text span {
+        padding: 5px 5px;
+    }
+}
+
+.ui__color {
+    background: linear-gradient(270.02deg, #0087C0 -7.24%, #004A83 125.58%);
+    box-shadow: 0px 20px 35px rgba(4, 54, 85, 0.26);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.under__ui {
+    text-align: center;
+    margin: 40px 0px 0px 0px;
+    padding: 12px;
+}
+
+.under__ui h3 {
+    color: #FFFFFF;
+    font-size: calc(16pt + 0.15vw);
+    font-family: 'LibreCaslonText__Bold';
+    line-height: 1.2195;
+    letter-spacing: 0.03em;
+}
+
+.under__ui span {
+    background-image: url('../Assets/Vector.png');
+    background-repeat: no-repeat;
+    padding-bottom: 15px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+@media screen and (max-width: 1080px) {
+    .under__ui h3 {
+        font-size: calc(8pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .under__ui h3 {
+        font-size: calc(6pt + 0.15vw);
+    }
+    .under__ui {
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+.div__li {
+    margin: 10px 0px 0px 75px;
+}
+
+.text__pr p {
+    font-size: calc(12pt + 0.15vw);
+    font-family: 'LibreCaslonText__Regular';
+    color: #FFFFFF;
+    line-height: 1.6195;
+    letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1080px) {
+    .text__pr p {
+        font-size: calc(8pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .div__li {
+        margin: 10px 0px 0px 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .text__pr p {
+        font-size: calc(6pt + 0.15vw);
+    }
+    .div__li {
+        margin: 10px 0px 0px 10px;
+    }
+}
+
+.Listing ul li {
+    list-style: none;
+    font-size: calc(12pt + 0.15vw);
+    line-height: 1.6195;
+    letter-spacing: 0.03em;
+    color: #CAE7FF;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.Listing ul li:before {
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-image: url('../Assets/Polygon 13.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 30px;
+}
+
+ol, ul {
+    padding-left: 0rem;
+}
+
+@media screen and (max-width: 1080px) {
+    .Listing ul li {
+        font-size: calc(8pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .Listing ul li {
+        font-size: calc(6pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .div__li {
+        background: linear-gradient(270.02deg, #0087C0 -7.24%, #004A83 125.58%);
+        width: 196%;
+    }
+}
+
+.Head__heading {
+    text-align: center;
+}
+
+.Head__heading h2 {
+    -webkit-text-stroke: 1px #FFFFFF;
+    -webkit-text-fill-color: #FF4C1A;
+    font-family: 'Elephant';
+    text-shadow: -5px 2px 0px #ff4c1a;
+    font-size: calc(32pt + 0.15vw);
+    line-height: 1.6195;
+    letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1080px) {
+    .Head__heading h2 {
+        font-size: calc(8pt + 0.15vw);
+        text-shadow: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .Head__heading h2 {
+        font-size: calc(6pt + 0.15vw);
+    }
+    .ui__li__gray {
+        background: linear-gradient(270.02deg, #0087C0 -7.24%, #004A83 125.58%);
+        width: 202%;
+        padding: 10px;
+        margin: -16px 0px 0px 0px;
+    }
+}
+
+.para__gm {
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+
+.para__gm p {
+    color: #FFFFFF;
+    font-size: calc(12pt + 0.15vw);
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 500;
+    line-height: 1.6195;
+    letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1080px) {
+    .para__gm p {
+        font-size: calc(8pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ul__se {
+        background: linear-gradient(270.02deg, #0087C0 -7.24%, #004A83 125.58%);
+        width: 201%;
+        padding: 10px;
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .para__gm p {
+        font-size: calc(6pt + 0.15vw);
+    }
+    .ul__se {
+        background: transparent;
+        width: 100%;
+        padding: 0px;
+        margin: 0px 0px 0px 0px;
+    }
+    .para__gm {
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+.input {
+    max-width: 80%;
+    margin: auto;
+}
+
+.form-control {
+    border-radius: 18px;
+    background-color: #FFF2E5;
+    outline: none;
+    border: none;
+    margin: 10px 0px 0px 0px;
+}
+
+input[type="text"] {
+    font-size: calc(12pt + 0.15vw);
+    line-height: 1.6195;
+    letter-spacing: 0.03em;
+    font-family: 'Livvic__Medium';
+    padding: 10px;
+}
+
+.form-control:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: #FFF2E5;
+    margin: 10px 0px 0px 0px;
+}
+
+.form-control::-webkit-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    /* Firefox */
+}
+
+.form-control::-moz-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    /* Firefox */
+}
+
+.form-control::-ms-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    /* Firefox */
+}
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #000000;
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #000000;
+}
+
+@media screen and (max-width: 1080px) {
+    input[type="text"] {
+        font-size: calc(8pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    input[type="text"] {
+        font-size: calc(6pt + 0.15vw);
+    }
+    .input .row {
+        flex-direction: column;
+    }
+    .input {
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .input {
+        max-width: 80%;
+    }
+}
+
+.bt__btn {
+    text-align: center;
+}
+
+.bt__btn button {
+    border: none;
+    color: #3F4244;
+    font-family: 'Livvic__Bold';
+    padding: 10px 150px;
+    background-color: #FFB62A;
+    border-radius: 14px;
+    font-size: calc(12pt + 0.15vw);
+    line-height: 1.2195;
+    transition: .3s ease-in-out;
+}
+
+.bt__btn :hover button {
+    background-color: #FFF2E5;
+    transform: translateX(3px);
+    transition: .3s ease-in-out;
+}
+
+@media screen and (max-width: 1080px) {
+    .bt__btn button {
+        padding: 10px 50px;
+        font-size: calc(8pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .bt__btn button {
+        padding: 10px 20px;
+        font-size: calc(6pt + 0.15vw);
+    }
+}
+
+.ls__pr {
+    text-align: center;
+}
+
+.ls__pr p {
+    color: #FFF2E5;
+    font-family: 'Livvic__Medium';
+    line-height: 1.2195;
+    font-size: calc(12pt + 0.15vw);
+}
+
+@media screen and (max-width: 1080px) {
+    .ls__pr p {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .mmo__pr {
+        background: linear-gradient(270.02deg, #0087C0 -7.24%, #004A83 125.58%);
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mmo__pr {
+        background: transparent;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .mmo__pr {
+        background: transparent;
+        padding: 10px;
+    }
+}
